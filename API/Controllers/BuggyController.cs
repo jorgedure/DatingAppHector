@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using API.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
-using API.Entidades_Entities;
+using API.Entities;
 
 namespace API.Controllers
 {

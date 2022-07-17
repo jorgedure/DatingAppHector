@@ -5,7 +5,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
 using API.Data;
-using API.Entidades_Entities;
+using API.Entities;
 using Microsoft.AspNetCore.Mvc;
 using API.DTOs;
 using Microsoft.EntityFrameworkCore;
@@ -42,7 +42,7 @@ namespace API.Controllers
 
       return new UserDto
       {
-         Username = user.UserName,
+         UserName = user.UserName,
         Token = _tokenService.CreateToken(user)
       };
     }
@@ -66,7 +66,7 @@ namespace API.Controllers
 
       return new UserDto
       {
-        Username = user.UserName,
+        UserName = user.UserName,
         Token = _tokenService.CreateToken(user)
       };
     }
