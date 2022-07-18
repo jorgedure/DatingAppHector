@@ -60,7 +60,7 @@ namespace API.Data.Migrations
                     b.Property<string>("UserName")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("knownAs")
+                    b.Property<string>("KnownAs")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
