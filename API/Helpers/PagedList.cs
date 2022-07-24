@@ -9,12 +9,12 @@ namespace API.Helpers
 {
   public class PagedList<T> : List<T>
   {
-    public PagedList(IEnumerable<T> items, int Ccount, int pageNumber, int pageSize)
+    public PagedList(IEnumerable<T> items, int count, int pageNumber, int pageSize)
     {
       CurrentPage = pageNumber;
-      TotalPages = (int) Math.Ceiling(Count / (double) pageSize);
+      TotalPages = (int) Math.Ceiling(count / (double) pageSize);
       PageSize = pageSize;
-      TotalCount = Count;
+      TotalCount = count;
       AddRange(items);
     }
 
